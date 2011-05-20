@@ -1,9 +1,9 @@
 task :build do
-  system("rm -fr build")
-  system("mkdir build")
-  system("haml --format html5 --double-quote-attributes views/index.haml build/index.html")
-  system("sass --scss views/screen.scss build/screen.css")
-  system("cp -r public/* build/")
+  sh "rm -fr build"
+  sh "mkdir build"
+  sh "haml --format html5 --double-quote-attributes views/index.haml build/index.html"
+  sh "sass --scss views/screen.scss build/screen.css"
+  sh "cp -r public/* build/"
 end
 
 task :deploy => :build do
