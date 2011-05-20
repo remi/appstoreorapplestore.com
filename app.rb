@@ -19,6 +19,6 @@ get "/" do
   haml :index
 end
 
-get "/css/screen.css" do
+get "/screen.css" do
   scss :screen
 end
