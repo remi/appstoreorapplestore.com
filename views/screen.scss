@@ -23,6 +23,18 @@ body {
   font-size: 120%;
 }
 
+#footer {
+  padding: 20px 0 40px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 105%;
+  opacity: 0.5;
+  a {
+    color: #333;
+  }
+}
+
 section {
   width: 50%;
   text-align: center;
