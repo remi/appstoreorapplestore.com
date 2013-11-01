@@ -19,7 +19,6 @@ body {
   width: 82em;
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   font-size: 120%;
 }
 
@@ -73,6 +72,8 @@ section {
     font-family: Georgia, serif;
     font-style: italic;
     color: rgba(0,0,0,0.4);
+    padding: 0 30px;
+
     del {
       color: rgba(0,0,0,0.2);
     }
@@ -90,5 +91,17 @@ section {
   section {
     width: 100%;
     float: none;
+
+    h1 {
+      font-size: 200%;
+    }
+
+    &#app {
+      padding-top: 40px;
+    }
+
+    &#apple {
+      padding-top: 20px;
+    }
   }
 }
