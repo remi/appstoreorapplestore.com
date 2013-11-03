@@ -3,3 +3,4 @@ tmp
 .local*
 .sass-cache
 build
+.ruby-version
