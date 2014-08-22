@@ -12,9 +12,9 @@
   %title App Store or Apple Store?
   %meta{ :name => "author", :content => "Rémi Prévost (@remi)" }
   %meta{ :name => "viewport", :content => "width=device-width" }
-  %link{ :rel => "icon", :href => "/favicon.png", :type => "image/png" }
+  %link{ :rel => "icon", :href => image_path("/favicon.png"), :type => "image/png" }
   %link{ :href => "http://fonts.googleapis.com/css?family=Carter+One", :rel => :stylesheet, :type => "text/css" }
-  %link{ :rel => :stylesheet, :href => "screen.css", :type => "text/css" }
+  %link{ :rel => :stylesheet, :href => stylesheet_path("screen.css"), :type => "text/css" }
   <script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-9062654-5']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 %body
   #wrap
@@ -23,7 +23,7 @@
         %h1
           %span If you can buy <em>applications</em>,
           %span you are in an <em>App Store</em>.
-        %img{ :src => "img/app-store.png", :alt => "Screenshot of the iOS App Store" }
+        %img{ :src => image_path("app-store.png"), :alt => "Screenshot of the iOS App Store" }
         %blockquote
           %p “Our application is now available on the <del>Apple</del> <ins>App</ins> Store.”
     %section#apple
@@ -31,7 +31,7 @@
         %h1
           %span If you can buy <em>hardware</em>,
           %span you are in an <em>Apple Store</em>.
-        %img{ :src => "img/apple-store.jpg", :alt => "Photo of the Ste-Foy Apple Store in Quebec City" }
+        %img{ :src => image_path("apple-store.jpg"), :alt => "Photo of the Ste-Foy Apple Store in Quebec City" }
         %blockquote
           %p “Yesterday, I bought an iPhone 4 at the <del>App</del> <ins>Apple</ins> Store.”
   #footer

@@ -4,6 +4,9 @@ gem "sinatra"
 gem "haml"
 gem "sass"
 gem "thin"
+gem 'sprockets'
+gem 'sprockets-sass'
+gem 'sprockets-helpers'
 
 group :development do
   gem "capistrano"

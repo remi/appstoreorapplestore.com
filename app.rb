@@ -1,24 +1,19 @@
-configure do
-  set :haml, :format => :html5, :attr_wrapper => '"'
-  set :scss, :cache_location => File.join(File.dirname(__FILE__), "tmp/sass-cache")
-  enable :static
-  set :public, File.join(File.dirname(__FILE__), "public")
-end
+class App < Sinatra::Base
+  helpers Sprockets::Helpers
 
-configure :development do
-  set :scss, settings.scss.merge(:style => :expanded)
-  set :haml, settings.haml.merge(:ugly => false)
-end
+  configure do
+    set :haml, :format => :html5, :attr_wrapper => '"'
+  end
 
-configure :production do
-  set :scss, settings.scss.merge(:style => :compressed)
-  set :haml, settings.haml.merge(:ugly => true)
-end
+  configure :development do
+    set :haml, settings.haml.merge(:ugly => false)
+  end
 
-get "/" do
-  haml :index
-end
+  configure :production do
+    set :haml, settings.haml.merge(:ugly => true)
+  end
 
-get "/screen.css" do
-  scss :screen
+  get "/" do
+    haml :index
+  end
 end
