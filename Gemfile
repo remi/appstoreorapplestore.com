@@ -10,6 +10,7 @@ group :development do
   gem "capistrano-ext"
   gem "net-netrc"
   gem "shotgun"
+  gem "hanzo"
 end
 
 gem "awesome_print", :require => "ap"
