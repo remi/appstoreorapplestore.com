@@ -1,4 +1,8 @@
 class App < Sinatra::Base
+  # Middleware
+  use Rack::CanonicalHost, ENV['CANONICAL_HOST']
+
+  # Helpers
   helpers Sprockets::Helpers
 
   configure do
