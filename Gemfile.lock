@@ -8,9 +8,8 @@ GEM
     highline (1.6.21)
     hike (1.2.3)
     multi_json (1.10.1)
-    puma (2.8.2)
-      rack (>= 1.1, < 2.0)
-    rack (1.5.2)
+    puma (3.6.0)
+    rack (1.6.4)
     rack-canonical-host (0.1.0)
       addressable
       rack (~> 1.0)
@@ -46,3 +45,6 @@ DEPENDENCIES
   sprockets
   sprockets-helpers
   sprockets-sass
+
+BUNDLED WITH
+   1.12.5
