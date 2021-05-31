@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #eee;
+  font-family: "Carter One", Helvetica, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+
+#wrap {
+  width: 82em;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 120%;
+  overflow: hidden;
+}
+
+#footer {
+  padding: 20px 0 40px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 105%;
+  opacity: 0.5;
+}
+#footer a {
+  color: #333;
+}
+
+section {
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 80px 0 40px;
+}
+section#app {
+  float: left;
+}
+section#apple {
+  float: right;
+}
+section h1 {
+  font-weight: normal;
+  font-size: 260%;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 40px;
+}
+section h1 em {
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+section h1 span {
+  white-space: nowrap;
+  display: block;
+}
+section h1 span:first-child {
+  font-size: 80%;
+}
+section img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  width: 60%;
+  margin: 0 auto 15px;
+}
+section blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+}
+section blockquote del {
+  color: rgba(0, 0, 0, 0.2);
+}
+section blockquote ins {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 820px) {
+  #wrap {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    float: none;
+  }
+  section h1 {
+    font-size: 200%;
+  }
+  section#app {
+    padding-top: 40px;
+  }
+  section#apple {
+    padding-top: 20px;
+  }
+}
